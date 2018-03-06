@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from message.views import getform
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # url('^form/$', getform),
+    path('form/', getform)
 ]
